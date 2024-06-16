@@ -19,7 +19,7 @@ const __dirname = path.dirname(__filename);
 const router = express.Router();
 
 // Define upload directory and ensure it exists
-const uploadDir = path.join(__dirname, '../public/Images'); // Adjust the path as needed
+const uploadDir = path.join(__dirname, '../public'); // Adjust the path as needed
 if (!fs.existsSync(uploadDir)) {
     try {
         fs.mkdirSync(uploadDir, { recursive: true });
