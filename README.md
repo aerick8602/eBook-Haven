@@ -90,4 +90,4 @@ Each book entry provides options to view details, download the associated PDF, e
 
 
 # Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your improvements.😁😁
+Contributions are welcome! Please fork the repository and create a pull request with your improvements.😁😁#
