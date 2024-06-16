@@ -2,6 +2,8 @@
 
 eBook Haven is a web application built to manage a collection of books. It allows users to upload, view, edit, and delete books along with their details.
 
+### Live: https://ebookhaven.netlify.app
+
 ![eBook Haven Screenshot](./client/public/demo/Screenshot%202024-06-15%20210139.png)
 
 ## Technologies Used
