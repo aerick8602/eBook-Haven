@@ -35,7 +35,7 @@ app.use('/books', router); // Adjust the base path as needed
 
 // Default route
 app.get('/', (req, res) => {
-    return res.status(200).send("Hello, this is a Book Store");
+   return res.status(200).send("Hello fork, Welcome to eBook Haven 🤩🤩");
 });
 
 export default app;
