@@ -18,6 +18,7 @@ export const updatebook = async (req, res) => {
 
         if (!result) {
             return res.status(404).json({ message: "Book Not Found" });
+            console.log("Book Not Found");
         }
 
         return res.status(200).send({ message: "Book updated successfully" })
