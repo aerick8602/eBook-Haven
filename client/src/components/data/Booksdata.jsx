@@ -18,11 +18,16 @@ const BooksTable = ({ books, setBooks }) => {
   };
 
   const downloadURL = (pdfFilePath) => {
-    const baseUrl = `${BASE_URL}/public/Images/`;
-    const filePathParts = pdfFilePath.split('\\'); // Assuming Windows path separator
-    const fileName = filePathParts[filePathParts.length - 1];
+    const baseUrl = `${BASE_URL}/public/`;
+    console.log("baseURL->" + baseUrl);
+
+    // Use a more robust method to extract the filename
+    const fileName = pdfFilePath.split('/').pop().split('\\').pop();
+    console.log("filename->" + fileName);
+
     return baseUrl + fileName;
   }
+
 
   return (
     <table className="px-4 w-full border-spacing-1 border-separate border-spacing-0.5">
