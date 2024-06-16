@@ -79,12 +79,12 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 
-   ```sh
+   ```bash
    cd eBook.com/
    ```
 
 2. Install dependencies:
-    ```sh
+    ```bash
     npm install express mongoose express cors multer
     ```
 
@@ -92,13 +92,13 @@ Before you begin, ensure you have the following installed:
     Create a connection file in the root of the project for backend configuration (e.g., MongoDB connection URL).
 
 4. Start the backend server:
-    ```sh
+    ```bash
     cd server/
     npm start
     ```
 
 5. Start the frontend development server:
-    ```sh
+    ```bash
     cd client/
     npm run dev
     ```
