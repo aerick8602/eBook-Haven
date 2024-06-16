@@ -14,7 +14,7 @@ eBook Haven is a web application built to manage a collection of books. It allow
 
 ### Backend:
 
-- **`server.js`**: Entry point for Express server.
+- **`index.js`**: Entry point for Express server.
 - **`routes/`**: Contains route handlers for CRUD operations.
 - **`models/`**: Defines MongoDB schema using Mongoose.
 - **`public/Images/`**: Directory to store uploaded book PDFs.
@@ -44,27 +44,6 @@ books.
 - **Responsive Interface**: Displays books in a table format with options to view details, download PDFs, edit book details, and delete books.
 - **Loading Indicator**: Shows a loading spinner while fetching data from the backend.
 
-## Technologies Used
-
-- **Frontend**: React, React Router DOM, Axios for API calls, React Icons for iconography, Notistack for notifications.
-- **Backend**: Node.js with Express for REST API, MongoDB with Mongoose for database management, Multer for file uploads.
-- **Styling**: Tailwind CSS for utility-first CSS framework.
-
-## Project Structure
-
-### Backend:
-
-- **`index.js`**: Entry point for Express server.
-- **`routes/`**: Contains route handlers for CRUD operations.
-- **`models/`**: Defines MongoDB schema using Mongoose.
-- **`public/Images/`**: Directory to store uploaded book PDFs.
-
-### Frontend:
-
-- **`src/`**:
-  - **`components/`**: Reusable React components.
-  - **`pages/`**: Main pages of the application.
-  - **`assets/`**: Contains images and other static assets.
 
 ## Installation
 
