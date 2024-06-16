@@ -6,7 +6,6 @@ import path from 'path';
 import { PORT, mongoDBURL, BASE_URL } from './connection/mongoose.js';
 import router from './routes/routes.js'; // Adjust the path as needed
 
-
 // Create __dirname equivalent for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -18,7 +17,9 @@ app.use(cors());
 app.use(express.json());
 
 // Serve static files from the specified directory
-app.use('/public', express.static(path.join(__dirname, 'public')));
+const publicDir = path.join(__dirname, 'public');
+console.log(`Serving static files from: ${publicDir}`);
+app.use('/public', express.static(publicDir));
 
 // Connect to MongoDB
 mongoose.connect(mongoDBURL, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -35,7 +36,7 @@ app.use('/books', router); // Adjust the base path as needed
 
 // Default route
 app.get('/', (req, res) => {
-   return res.status(200).send("Hello fork, Welcome to eBook Haven 🤩🤩");
+    return res.status(200).send("Hello fork, Welcome to eBook Haven 🤩🤩");
 });
 
 export default app;
