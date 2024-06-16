@@ -54,7 +54,7 @@ books.
 
 ### Backend:
 
-- **`server.js`**: Entry point for Express server.
+- **`index.js`**: Entry point for Express server.
 - **`routes/`**: Contains route handlers for CRUD operations.
 - **`models/`**: Defines MongoDB schema using Mongoose.
 - **`public/Images/`**: Directory to store uploaded book PDFs.
